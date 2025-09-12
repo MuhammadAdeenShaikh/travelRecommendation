@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL RECOMMENDATION</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <style>
+         body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+    }
+
+     /* Banner section */
+    .banner {
+      position: relative;
+      height: 100vh;
+      background: url('Travel Banner.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .banner h1 {
+      font-size: 50px;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+      margin-top: 20px;
+    }
+
+    /* Paragraph box */
+    .para {
+      max-width: 800px;
+      background: rgba(255,255,255,0.1); /* halki si white shading */
+      padding: 20px 30px;
+      border-radius: 10px;
+      backdrop-filter: blur(2px); /* glassy effect */
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .para span {
+      font-weight: bolder;
+      color: white;
+    }
+
+    .team {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #CEO, #Team-Lead, #Delivery-Head {
+        background: rgba(255,255,255,0.1); /* halki si white shading */
+        width: 33vh;
+    }
+    button {
+        background-color: rgb(24, 4, 95);
+        color: white;
+        height: 22px;
+        width: 109px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+
+    }
+    </style>
+    <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+         <!-- Logo -->
+    <div class="logo">
+      <i class="fa-solid fa-plane"></i>
+      <span class="logo-text">TravelBloom</span>
+    </div>
+
+     <!-- Links -->
+    <div class="nav-links">
+      <a href="travel_commendation.html">Home</a>
+      <a href="about_us.html">About Us</a>
+      <a href="contact_us.html">Contact Us</a>
+    </div>
+
+     <!-- Search Box -->
+    <div class="search-box">
+      <input type="text" placeholder="Enter a destination or keyword">
+      <button class="search-btn">Search</button>
+      <button class="clear-btn">Clear</button>
+    </div>
+    </nav>
+
+    <section class="banner">
+      <div id="result"></div>
+        <h1>ABOUT US</h1>
+        <div class="para">
+        <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to <span>provide the best experience</span>for people traveling to different destinations around the world.</p>
+        <p>Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in <span>putting our customers first</span>and <span>working together</span>to achieve our goals.</p>
+        <p>Feel free to explore our website to learn more about what we offer!</p>
+        </div>
+        <br>
+        <div class="team">
+            <h1 >Our Team</h1>
+            <div id="CEO">
+                <h4>John Doe</h4>
+                <p>John Doe is responsible for...</p>
+                <button>CEO</button>
+            </div>
+            <div id="Team-Lead">
+                <h4>Celina Thomas</h4>
+                <p>Celina Thomas is responsible for...</p>
+                <button>Team Lead</button>
+            </div>
+            <div id="Delivery-Head">
+                <h4>Mike Tyson</h4>
+                <p>Mike Tyson is responsible for...</p>
+                <button>Delivery Head</button>
+            </div>
+        </div>
+    </section>
+        <script src="travel_recommendation.js"></script>
+</body>
+</html>
