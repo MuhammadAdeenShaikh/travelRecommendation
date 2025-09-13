@@ -1,0 +1,166 @@
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('Travel Banner.jpg') no-repeat center center/cover;
+    min-height: 100vh; /* kam se kam ek full screen cover kare */
+    background-attachment: fixed; /* optional: scroll karne par bhi fixed rahe */
+    }
+
+    /* navbar */
+    nav {
+        background: linear-gradient(to right, #052229, #4594a0);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+        color: white;
+    }
+
+    /* logo */
+    .logo i {
+         font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+     /* Nav links */
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ddd;
+    }
+
+    /* Search box */
+    .search-box {
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 25px;
+        overflow: hidden;
+        padding: 3px;
+        width: 350px;
+    }
+
+    .search-box input {
+        flex: 1;
+        border: none;
+        padding: 8px 12px;
+        outline: none;
+        font-size: 14px;
+    }
+
+    .search-box button {
+        border: none;
+        padding: 8px 15px;
+        cursor: pointer;
+        color: white;
+        border-radius: 20px;
+        margin-left: 3px;
+        font-size: 14px;
+    }
+
+    .search-btn {
+      background: teal;
+    }
+
+    .clear-btn {
+      background: #00796b;
+    }
+
+   /* banner */
+   .banner {
+       position: relative;
+       height: 100vh;
+       background: url('Travel Banner.jpg') no-repeat center center/cover;
+       display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+   }
+
+   .banner .icon {
+    position: absolute;     /* banner ke andar fixed karne ke liye */
+    left: 30px;             /* left side pe laye */
+    bottom: 100px;          /* neeche se thoda upar */
+    display: flex;
+    flex-direction: column; /* column banane ke liye */
+    gap: 20px;              /* icons ke beech space */
+    font-size: 24px;        /* size bara karna */
+    color: white;           /* white color fix */
+    z-index: 2;             /* taake background ke neeche na chhup jaye */
+}
+
+.banner .icon i {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.banner .icon i:hover {
+    color: #00aced; /* hover effect (light blue) */
+}
+
+.article {
+    height: 70vh;
+    width: 100vh;
+    margin: 10px auto 25px 80px;
+}
+
+.article h1 {
+    font-size: 15vh;
+    font-weight: 600;
+}
+
+.article #book {
+    background-color: rgb(0, 128, 96);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* Card container */
+.card {
+  width: 280px;             /* card ki width */
+  margin: 15px;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background: #fff;
+  text-align: center;
+  display: inline-block;    /* cards ek line me aayenge */
+  vertical-align: top;
+}
+
+/* Card images */
+.card img {
+  width: 100%;              /* image card ki width ke hisaab se fit ho */
+  height: 180px;            /* fixed height */
+  object-fit: cover;        /* image crop ho but stretch na ho */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Headings inside cards */
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+/* Description inside cards */
+.card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
